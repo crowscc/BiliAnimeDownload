@@ -133,10 +133,6 @@
       <Project>{98b83403-44dc-43a0-849f-4ea53b7bff6f}</Project>
       <Name>BiliAnimeDownload</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\xiaoyaocz\Desktop\FilePicker-master\Compass.FilePicker\Compass.FilePicker.csproj">
-      <Project>{605f69aa-93a8-4aea-9bbd-bf3ae649506a}</Project>
-      <Name>Compass.FilePicker</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />

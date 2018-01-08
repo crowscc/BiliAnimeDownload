@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiliAnimeDownload.Android",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiliAnimeDownload", "BiliAnimeDownload\BiliAnimeDownload\BiliAnimeDownload.csproj", "{C17CC521-171D-4288-A71D-3E0BA70D8F81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compass.FilePicker", "C:\Users\xiaoyaocz\Desktop\FilePicker-master\Compass.FilePicker\Compass.FilePicker.csproj", "{605F69AA-93A8-4AEA-9BBD-BF3AE649506A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compass.FilePicker", "BiliAnimeDownload\Compass.FilePicker\Compass.FilePicker.csproj", "{605F69AA-93A8-4AEA-9BBD-BF3AE649506A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

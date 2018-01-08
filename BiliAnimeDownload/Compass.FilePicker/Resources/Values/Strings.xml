@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name = "filepicker_ApplicationName">$projectname$</string>
+  <string name = "filepicker_ok">确定</string>
+  <string name = "filepicker_cancel_label">取消</string>
+  <string name = "filepicker_confirm_label">选择</string>
+  <string name = "filepicker_selected_folder_label">选择目录:</string>
+  <string name = "filepicker_selected_file_label">选择文件:</string>
+  <string name = "filepicker_create_folder_label">创建目录</string>
+  <string name = "filepicker_enter_folder_msg">输入目录名</string>
+  <string name = "filepicker_create_folder_msg">Create new folder with name "%1$s"?</string>
+  <string name = "filepicker_create_folder_success">目录已创建</string>
+  <string name = "filepicker_create_folder_error_no_write_access">无权限创建目录</string>
+  <string name = "filepicker_create_folder_error_already_exists">该目录已经存在</string>
+  <string name = "filepicker_create_folder_error">无法创建目录</string>
+  <string name = "filepicker_up_label">Up</string>
+</resources>
