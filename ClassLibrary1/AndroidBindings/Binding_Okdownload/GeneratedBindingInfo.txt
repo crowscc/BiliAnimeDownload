@@ -1,8 +1,0 @@
-Binding for:
-org.succlz123.okdownload:okdownload:0.0.1
-
-Dependencies:
-
-okdownload-0.0.1.aar,    Path=C:\Users\xiaoyaocz\.gradle\caches\modules-2\files-2.1\org.succlz123.okdownload\okdownload\0.0.1\6d44b4e6a1a4d01d595805aa39f35d41ef1c3f55\okdownload-0.0.1.aar
-	okhttp-2.5.0.jar,    Path=C:\Users\xiaoyaocz\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar
-	okio-1.6.0.jar,    Path=C:\Users\xiaoyaocz\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar
