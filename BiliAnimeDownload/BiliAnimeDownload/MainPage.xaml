@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BiliAnimeDownload"
+             x:Class="BiliAnimeDownload.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="如何使用" x:Name="menu_help" Clicked="menu_help_Clicked" Order="Secondary" />
+        <ToolbarItem Text="设置" x:Name="menu_setting" Clicked="menu_setting_Clicked" Order="Secondary" />
+      
+    </ContentPage.ToolbarItems>
+    
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition  Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout>
+            <Entry  x:Name="txt_Sid" Placeholder="输入番剧地址"  Margin="8,4,8,0" ></Entry>
+            <Button x:Name="btn_Go" BackgroundColor="{StaticResource Key=Primary}" TextColor="White" Clicked="btn_Go_Clicked" Margin="8,0,8,4" Text="开始读取"></Button>
+            <Label   Margin="8,0,8,4" FontSize="Large" Text="{Binding title}"></Label>
+        </StackLayout>
+        <ListView Grid.Row="1" x:Name="ls" Margin="8,4,8,8" ItemsSource="{Binding episodes}"
+            RowHeight ="48"
+             IsPullToRefreshEnabled="False"
+                 ItemSelected="ls_ItemSelected"
+            CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <ViewCell >
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding index}" Margin="0,0,4,0" VerticalOptions="Center" ></Label>
+                            <Label Text="{Binding index_title}"  VerticalOptions="Center"></Label>
+                        </StackLayout>
+                    </ViewCell >
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="1" x:Name="ls_Video" Margin="8,4,8,8" IsVisible="False" ItemsSource="{Binding pages}"
+            RowHeight ="48"
+             IsPullToRefreshEnabled="False"
+                 ItemSelected="ls_ItemSelected"
+            CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <ViewCell >
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding page}" Margin="0,0,4,0" VerticalOptions="Center" ></Label>
+                            <Label Text="{Binding part}"  VerticalOptions="Center"></Label>
+                        </StackLayout>
+                    </ViewCell >
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <ActivityIndicator IsVisible="False" Grid.RowSpan="2" Margin="0,48,0,0" Color="{StaticResource Key=Primary}" IsRunning="true" x:Name="Loading" WidthRequest="56" HeightRequest="56" VerticalOptions="Center" HorizontalOptions="Center"/>
+    </Grid>
+
+</ContentPage>

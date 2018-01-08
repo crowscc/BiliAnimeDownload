@@ -1,0 +1,6 @@
+Binding for:
+com.coolerfall:android-http-download-manager:1.6.1
+
+Dependencies:
+
+android-http-download-manager-1.6.1.aar,    Path=C:\Users\xiaoyaocz\.gradle\caches\modules-2\files-2.1\com.coolerfall\android-http-download-manager\1.6.1\5e8727a32af31c3eaabbb2adaad25426da9b6273\android-http-download-manager-1.6.1.aar

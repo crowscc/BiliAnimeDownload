@@ -1,0 +1,17 @@
+Binding for:
+com.leon:lfilepickerlibrary:1.3.0
+
+Dependencies:
+
+lfilepickerlibrary-1.3.0.aar,    Path=C:\Users\xiaoyaocz\.gradle\caches\modules-2\files-2.1\com.leon\lfilepickerlibrary\1.3.0\aa7bc0cf728ae9807b7af6c3697da4b9bacafcf2\lfilepickerlibrary-1.3.0.aar
+	animated-vector-drawable-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\animated-vector-drawable\25.0.0\animated-vector-drawable-25.0.0.aar
+	appcompat-v7-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\appcompat-v7\25.0.0\appcompat-v7-25.0.0.aar
+	recyclerview-v7-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\recyclerview-v7\25.0.0\recyclerview-v7-25.0.0.aar
+	support-annotations-25.0.0.jar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar
+	support-compat-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-compat\25.0.0\support-compat-25.0.0.aar
+	support-core-ui-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-core-ui\25.0.0\support-core-ui-25.0.0.aar
+	support-core-utils-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-core-utils\25.0.0\support-core-utils-25.0.0.aar
+	support-fragment-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-fragment\25.0.0\support-fragment-25.0.0.aar
+	support-media-compat-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-media-compat\25.0.0\support-media-compat-25.0.0.aar
+	support-v4-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-v4\25.0.0\support-v4-25.0.0.aar
+	support-vector-drawable-25.0.0.aar,    Path=C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-vector-drawable\25.0.0\support-vector-drawable-25.0.0.aar

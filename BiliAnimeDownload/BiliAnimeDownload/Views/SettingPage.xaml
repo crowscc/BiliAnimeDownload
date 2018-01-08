@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BiliAnimeDownload.Views.SettingPage"
+            Title="设置"
+            >
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="设置" >
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout Margin="8,8,8,8">
+                    <Label Text="下载方式" FontSize="Medium" TextColor="{StaticResource Key=Primary}"/>
+                    <Label Text="*客户端下载指调用哔哩哔哩客户端下载,无法下载会员番和地区受限番" />
+                    <Label Text="*系统下载指调用系统下载视频，支持绝大部分番下载,MIUI用户需要关闭迅雷加速" />
+                    <Picker Title="选择下载方式" x:Name="cb_DownloadMode" SelectedIndexChanged="cb_DownloadMode_SelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>客户端下载</x:String>
+                            <x:String>系统下载</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Label Text="存储位置"  FontSize="Medium" TextColor="{StaticResource Key=Primary}"/>
+                    <Label Text="*需与哔哩哔哩客户端保持一致" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="btn_SelectPath" Clicked="btn_SelectPath_Clicked" Text="选择位置" BackgroundColor="{StaticResource Key=Primary}" TextColor="White"></Button>
+                        <Button x:Name="btn_DefaultPath" Grid.Column="1" Clicked="btn_DefaultPath_Clicked" Text="恢复默认" BackgroundColor="{StaticResource Key=Primary}" TextColor="White"></Button>
+                    </Grid>
+                  
+                    <Label x:Name="txt_DownPath" ></Label>
+
+                    <Label Text="哔哩哔哩客户端类型" FontSize="Medium" TextColor="{StaticResource Key=Primary}"/>
+                    <Picker Title="客户端类型" x:Name="cb_Client" SelectedIndexChanged="cb_Client_SelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>正式版</x:String>
+                            <x:String>概念版</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="清晰度"  FontSize="Medium" TextColor="{StaticResource Key=Primary}"/>
+                    <Label Text="*有些番剧没有1080P,选择客户端下载时需要大会员登录才能下1080P" />
+                    <Picker Title="选择清晰度" x:Name="cb_Q" SelectedIndexChanged="cb_Q_SelectedIndexChanged">
+                        <Picker.Items>
+                            <x:String>1080P</x:String>
+                            <x:String>超清</x:String>
+                            <x:String>高清</x:String>
+                            <x:String>流畅</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+
+                </StackLayout>
+            </ScrollView>
+
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="关于" >
+        <ScrollView>
+            <StackLayout Margin="8,8,8,8">
+                <Image WidthRequest="56" HeightRequest="56" HorizontalOptions="Center" Source="icon.png"></Image>
+                <Label HorizontalOptions="Center" Text="哔哩下载工具" TextColor="Black"/>
+                <Label  HorizontalOptions="Center" x:Name="txt_ver"/>
+                <Button HorizontalOptions="Center" x:Name="btn_CheckUpdate" Clicked="btn_CheckUpdate_Clicked" Text="检查更新"></Button>
+
+                <Label  Text="开发"  FontSize="Medium" Margin="0,16,0,0" TextColor="{StaticResource Key=Primary}"/>
+                <Label Text="@xiaoyaocz 使用Xamarin开发"></Label>
+                <Label Text="xiaoyaocz@52uwp.com"></Label>
+                <Label  Text="https://github.com/xiaoyaocz/BiliAnimeDownload"  TextColor="{StaticResource Key=Primary}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label  Text="赞助"  FontSize="Medium" Margin="0,16,0,0" TextColor="{StaticResource Key=Primary}"/>
+                <Label Text="如果觉得好用,请我喝杯咖啡吧"></Label>
+                <Label Text="支付宝:2500655055@qq.com"  TextColor="{StaticResource Key=Primary}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label  Text="使用声明"  FontSize="Medium" Margin="0,16,0,0" TextColor="{StaticResource Key=Primary}"/>
+                <Label Text="1、此程序仅供学习交流编程技术使用"></Label>
+                <Label Text="2、如侵犯你的合法权益，请联系本人以第一时间删除"></Label>
+
+                <Label  Text="引用&amp;开源" FontSize="Medium"  Margin="0,16,0,0" TextColor="{StaticResource Key=Primary}"/>
+                <Label Text="soimort/you-get" ></Label>
+                <Label  Text="https://github.com/soimort/you-get"  TextColor="{StaticResource Key=Primary}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="mikescandy/FilePicker" ></Label>
+                <Label  Text="https://github.com/mikescandy/FilePicker"  TextColor="{StaticResource Key=Primary}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+</TabbedPage>

@@ -1,0 +1,6 @@
+Binding for:
+com.liulishuo.filedownloader:library:1.6.9
+
+Dependencies:
+
+library-1.6.9.aar,    Path=C:\Users\xiaoyaocz\.gradle\caches\modules-2\files-2.1\com.liulishuo.filedownloader\library\1.6.9\48b54041ad52acfcbbc889bd6fde5ab9f4c8d86c\library-1.6.9.aar
