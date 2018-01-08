@@ -87,7 +87,7 @@ namespace BiliAnimeDownload.Helpers
                     }
                     else
                     {
-                        ShowToast.ShowShortAlert("无法读取到下载地址");
+                        Util.ShowShortToast("无法读取到下载地址");
                         return new List<segment_listModel>();
                     }
 
@@ -112,7 +112,7 @@ namespace BiliAnimeDownload.Helpers
             }
             catch (Exception)
             {
-                ShowToast.ShowShortAlert("无法读取到下载地址");
+                Util.ShowShortToast("无法读取到下载地址");
                 return new List<segment_listModel>();
             }
 

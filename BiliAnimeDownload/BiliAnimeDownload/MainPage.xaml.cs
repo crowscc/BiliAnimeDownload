@@ -53,7 +53,7 @@ namespace BiliAnimeDownload
         {
             if (txt_Sid.Text.Length == 0)
             {
-                ShowToast.ShowShortAlert("请输入番剧地址");
+                Util.ShowShortToast("请输入番剧地址");
                 return;
             }
             if (txt_Sid.Text.Contains("av"))
@@ -106,7 +106,7 @@ namespace BiliAnimeDownload
                 }
                 else
                 {
-                    ShowToast.ShowShortAlert("加载失败,请检查网址是否正确");
+                    Util.ShowShortToast("加载失败,请检查网址是否正确");
                 }
             }
             catch (Exception ex)
@@ -150,7 +150,7 @@ namespace BiliAnimeDownload
                 }
                 else
                 {
-                    ShowToast.ShowShortAlert("加载失败,请检查网址是否正确");
+                    Util.ShowShortToast("加载失败,请检查网址是否正确");
                 }
             }
             catch (Exception ex)
@@ -323,7 +323,7 @@ namespace BiliAnimeDownload
                 var msg = Util.StartDownload(startDownModel);
                 if (msg.code == 200)
                 {
-                    ShowToast.ShowShortAlert(msg.message);
+                    Util.ShowShortToast(msg.message);
                 }
                 else
                 {
@@ -459,7 +459,7 @@ namespace BiliAnimeDownload
                 var msg = Util.StartDownload(startDownModel);
                 if (msg.code == 200)
                 {
-                    ShowToast.ShowShortAlert(msg.message);
+                    Util.ShowShortToast(msg.message);
                 }
                 else
                 {
